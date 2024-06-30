@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <style>
+      :root {
+        --bg-color: white;
+        --text-color: rgb(35, 35, 35);
+        --light-text-color: rgb(100, 100, 100);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Exo", sans-serif;
+      }
+      .card-container {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card .title {
+        margin-top: 1.4rem;
+        font-size: 1.6rem;
+        color: var(--text-color);
+      }
+      .subtitle {
+        color: var(--light-text-color);
+        font-size: 0.9rem;
+        margin-bottom: 1.4rem;
+        font-weight: 600;
+      }
+      .description {
+        color: var(--light-text-color);
+        font-size: 0.8rem;
+        text-align: center;
+        margin-bottom: 1.4rem;
+        font-weight: 500;
+      }
+      .card {
+        border: 1px solid var(--text-color);
+        padding: 60px;
+        width: 250px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+      .card-footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin: 1.4rem 0;
+      }
+      .card-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+      }
+      .card img {
+        width: 150px;
+        border-radius: 50%;
+      }
+      .btn {
+        border: 2px solid var(--text-color);
+        padding: 10px;
+        border-radius: 8px;
+        text-decoration: none;
+        width: 100%;
+      }
+      .btn a {
+        text-decoration: none;
+      }
+      .card-info-item p {
+        color: var(--text-color);
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+      .hire-me {
+        background-color: var(--text-color);
+      }
+      .hire-me a {
+        color: var(--bg-color);
+      }
+      .follow a {
+        color: var(--text-color);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <img
+          src="https://picsum.photos/200"
+          alt="Profile picture of Sara Riley"
+        />
+        <h3 class="title">Sara Riley</h3>
+        <p class="subtitle">UI/UX Designer</p>
+        <p class="description">
+          Passionate about creating user-centric designs that enhance digital
+          experiences.
+        </p>
+        <div class="card-info">
+          <div class="card-info-item">
+            <p>Projects</p>
+            <h3>18</h3>
+          </div>
+          <div class="card-info-item">
+            <p>Following</p>
+            <h3>464</h3>
+          </div>
+          <div class="card-info-item">
+            <p>Followers</p>
+            <h3>852</h3>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="btn follow">
+            <a href="" class="">Follow</a>
+          </div>
+
+          <div class="btn hire-me">
+            <a href="" class="">Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
